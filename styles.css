@@ -129,7 +129,6 @@ ul.menu li:hover .submenu {
     margin-top: 10px;
 }
 
-/* Search Bar */
 .search-container {
     margin-top: 20px;
     max-width: 50%;
@@ -148,8 +147,8 @@ ul.menu li:hover .submenu {
 }
 
 .search-bar:focus {
-    background-color: rgba(0, 0, 0, 0.9); /* Darker on focus */
-    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.9);
+    outline: none;
 }
 
 .social-icons {
@@ -174,32 +173,31 @@ ul.menu li:hover .submenu {
     color: #ccc;
 }
 
-/* Additional styles for the image grid and slideshow */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px; /* Space between images */
+    gap: 10px;
     margin: 20px 0;
 }
 
 .image-grid img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 .slideshow {
     position: relative;
-    max-width: 800px; /* Limit width */
-    margin: auto; /* Center align */
+    max-width: 800px;
+    margin: auto;
 }
 
 .slideshow img {
-    width: 100%; /* Full width */
-    display: none; /* Hidden by default */
+    width: 100%;
+    display: none;
 }
 
 .slideshow img.active {
-    display: block; /* Show active image */
+    display: block; 
 }
 
 .slideshow .prev,
