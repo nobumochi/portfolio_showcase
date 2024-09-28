@@ -7,7 +7,7 @@
 
 /* Background */
 .background {
-    background-image: url('assets/images/white.jpeg');
+    background-image: url('assets/images/mask.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
