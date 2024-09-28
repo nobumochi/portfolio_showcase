@@ -34,7 +34,7 @@ ul.menu li {
 }
 
 ul.menu li a {
-    font-family: 'Average', serif;
+    font-family: 'Average', sans-serif;
     font-size: 1.2rem;
     color: white;
     text-decoration: none;
@@ -172,4 +172,54 @@ ul.menu li:hover .submenu {
 
 .social-icons a:hover {
     color: #ccc;
+}
+
+/* Additional styles for the image grid and slideshow */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Space between images */
+    margin: 20px 0;
+}
+
+.image-grid img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.slideshow {
+    position: relative;
+    max-width: 800px; /* Limit width */
+    margin: auto; /* Center align */
+}
+
+.slideshow img {
+    width: 100%; /* Full width */
+    display: none; /* Hidden by default */
+}
+
+.slideshow img.active {
+    display: block; /* Show active image */
+}
+
+.slideshow .prev,
+.slideshow .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.slideshow .prev {
+    left: 10px;
+}
+
+.slideshow .next {
+    right: 10px;
 }
