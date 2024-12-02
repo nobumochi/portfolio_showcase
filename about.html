@@ -8,6 +8,123 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Average&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background */
+        .subdirectory-background {
+            background-color: #FFD580; /* Lighter pastel orange */
+            height: 10px;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+        }
+
+        /* Menu */
+        nav {
+            margin-top: 20px;
+        }
+
+        ul.menu {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        ul.menu li {
+            margin: 20px;
+            position: relative;
+        }
+
+        ul.menu li a {
+            font-family: 'Average', sans-serif;
+            font-weight: normal;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: rgba(119, 136, 153, 0.75);
+        }
+
+        ul.menu li ul.submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(119, 136, 153, 0.75);
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.menu li:hover ul.submenu {
+            display: block;
+        }
+
+        ul.menu li ul.submenu li {
+            margin: 0;
+        }
+
+        ul.menu li ul.submenu li a {
+            padding: 10px 20px;
+        }
+
+        /* Puzzle Layout */
+        .puzzle-layout {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .image-container, .rectangle {
+            flex: 1 1 45%; /* Allow items to grow and shrink, with a base size of 45% */
+            max-width: 900px;
+            max-height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 3 / 2; /* Maintain 900x600 aspect ratio */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rectangle {
+            background-color: beige;
+        }
+
+        .rectangle.midnight-blue {
+            background-color: #A3C1E1; /* Lighter pastel blue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rectangle.midnight-blue h2 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
+            color: white;
+            font-size: 4vw; /* Responsive font size */
+            text-align: center;
+        }
+
+        .rectangle.yellow {
+            background-color: #FFD580; /* Lighter pastel orange */
+        }
+    </style>
 </head>
 <body>
     <div class="subdirectory-background"></div>
@@ -26,5 +143,22 @@
             </li>
         </ul>
     </nav>
+
+    <div class="puzzle-layout">
+        <div class="image-container">
+            <img src="assets/images/white.jpeg" alt="Image 1">
+        </div>
+        <div class="rectangle midnight-blue">
+            <h2>ABOUT ME</h2>
+        </div>
+        <div class="rectangle yellow">
+            <p style="font-family: 'Average', sans-serif; padding: 20px; color: white;">
+                Justin Kim is currently a second year Georgia Tech student, majoring in Computational Media. He has a passion for art and has worked on things such as robotics, a mock style guide of Steinways & Sons, and more. His work reflects his love for photography and digital art.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="assets/images/wide.jpg" alt="Image 2">
+        </div>
+    </div>
 </body>
 </html>
