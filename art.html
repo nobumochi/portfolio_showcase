@@ -6,10 +6,21 @@
     <title>Photography/Art</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Average&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Average&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body, h2, p {
+            font-family: 'Oswald', sans-serif; /* Change font to Oswald */
+            font-weight: bold; /* Set font weight to bold */
+        }
+        .divider h2 {
+            font-family: 'Oswald', sans-serif; /* Change font to Oswald */
+            font-weight: bold; /* Set font weight to bold */
+        }
+    </style>
 </head>
 <body>
+    <div class="subdirectory-background"></div>
     <nav>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
@@ -25,6 +36,9 @@
             </li>
         </ul>
     </nav>
+    <div class="divider" style="margin-top: 1px; margin-bottom: 1px;">
+        <h2>Art</h2>
+    </div>
 
     <div class="image-grid">
         <img src="assets/images/Untitled_Artwork 1 copy 2.jpg" alt="Image 1">
@@ -47,7 +61,11 @@
         <img src="assets/images/Untitled_Artwork 3 copy 2.png" alt="Image 18">
     </div>
 
-    <div class="slideshow">
+    <div class="divider">
+        <h2>Photography</h2>
+    </div>
+
+    <div class="slideshow" style="margin-top: 2px;">
         <img class="active" src="assets/images/1.jpg" alt="Slideshow Image 1">
         <img src="assets/images/2.jpg" alt="Slideshow Image 2">
         <img src="assets/images/3.jpg" alt="Slideshow Image 3">

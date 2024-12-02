@@ -15,7 +15,8 @@
 <body>
     <div class="background">
         <div class="overlay">
-            </nav>
+            <div class="subdirectory-background"></div>
+            <nav>
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="social.html">Instagram</a></li>
@@ -30,13 +31,14 @@
                     </li>
                 </ul>
             </nav>
-
             <div class="content">
                 <h1>JUSTIN KIM</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus, augue sed malesuada elementum, dui nulla efficitur metus, in maximus magna nunc eu justo. Mauris eget enim varius, placerat nisl sed, tempus nunc. Aliquam erat volutpat. Morbi nibh nulla, aliquam ac porttitor sed, porttitor sit amet orci. Praesent sed congue.</p>
 
                 <div class="search-container">
-                    <input type="text" placeholder="Search..." class="search-bar">
+                    <form id="search-form">
+                        <input type="text" placeholder="Search..." class="search-bar" id="search-input">
+                    </form>
                 </div>
             </div>
             
@@ -47,5 +49,24 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('search-input').value.toLowerCase();
+            if (query.includes('instagram')) {
+                window.location.href = 'social.html';
+            } else if (query.includes('journalism')) {
+                window.location.href = 'journalism.html';
+            } else if (query.includes('photography') || query.includes('art')) {
+                window.location.href = 'art.html';
+            } else if (query.includes('about')) {
+                window.location.href = 'about.html';
+            } else if (query.includes('awards')) {
+                window.location.href = 'awards.html';
+            } else {
+                alert('No matching page found.');
+            }
+        });
+    </script>
 </body>
 </html>
