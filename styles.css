@@ -302,22 +302,6 @@ ul.menu li:hover .submenu {
     margin-bottom: 10px; 
 }
 
-.poster-btn {
-    font-family: 'Oswald', sans-serif;
-    padding: 10px 20px;
-    background-color: #FFD580;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.poster-btn:hover {
-    background-color: #004d4d; 
-}
-
-
 .poster-summary {
     flex-grow: 1;
     color: #333;
@@ -438,6 +422,3 @@ ul.menu li:hover .submenu {
 .button:hover {
     background-color: rgba(119, 136, 153, 0.85); /* Blue-gray color with 85% opacity */
 }
-
-
-
