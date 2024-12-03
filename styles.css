@@ -311,7 +311,6 @@ ul.menu li:hover .submenu {
     max-width: 40%; 
 }
 
-
 @media (max-width: 768px) {
     .posters {
         flex-direction: column;
